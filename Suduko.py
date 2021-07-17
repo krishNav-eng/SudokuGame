@@ -155,9 +155,6 @@ selectionThread.start()
 timeThread = t.Thread(target=clock.start)
 timeThread.start()
 
-# checkingThread = t.Thread(target=check)
-# checkingThread.start()
-
 while running:
   for e in pg.event.get():
     if e.type == pg.QUIT:
